@@ -4,4 +4,34 @@
 @{
     ViewData["Title"] = "Calculator";
 }
-<p>This is the calculator</p>
+
+<h2>Grade Calculator</h2>
+<p>Enter % scored for each grade category</p>
+<form>
+    <div class="form-group">
+        <label>Assignments:</label>
+        <input id="txtAssignments" type="number" />
+    </div>
+
+    <div class="form-group">
+        <label>Group Projects:</label>
+        <input id="txtProjects" type="number" />
+    </div>
+
+    <div class="form-group">
+        <label>Quizzes:</label>
+        <input id="txtQuizzes" type="number" />
+    </div>
+
+    <div class="form-group">
+        <label>Exams:</label>
+        <input id="txtExams" type="number" />
+    </div>
+
+    <div class="form-group">
+        <label>INTEX:</label>
+        <input id="txtIntex" type="number" />
+    </div>
+
+    <input id="btnSend" type="button" class="btn btn-primary" value="Send Message" />
+</form>
