@@ -9,18 +9,18 @@ namespace Mission_3_Assignment.Models
     public class CalculatorModel
     {
         [Required]
-        public byte Assignments { get; set; }
+        public float Assignments { get; set; }
 
         [Required]
-        public byte Projects { get; set; }
+        public float Projects { get; set; }
 
         [Required]
-        public byte Quizzes { get; set; }
+        public float Quizzes { get; set; }
 
         [Required]
-        public byte Exams { get; set; }
+        public float Exams { get; set; }
 
         [Required]
-        public byte Intex { get; set; }
+        public float Intex { get; set; }
     }
 }
