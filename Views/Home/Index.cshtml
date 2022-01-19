@@ -2,7 +2,59 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+
+<div class="content">
+    <h1>Brian Busco</h1>
+    <img src="img/boarding.jpg" />
+    <figcaption>On the slopes</figcaption>
+
+    <h2>IS 413 Goals</h2>
+    <p>
+        In our past IS classes we've learned a few frameworks
+        that can be used to create web applications. However, my
+        hope with this class is that I will learn the neccessary
+        skills to easily create web applications in industry.
+    </p>
+
+    <h2>Post-Graduation Job Goals</h2>
+    <ol>
+        <li>Cybersecurity Professional</li>
+        <li>Technology Risk Analyst</li>
+        <li>Software Engineer</li>
+    </ol>
+
+    <h2>Grade Calculator</h2>
+    <p>Enter % scored for each grade category</p>
+    <form>
+        <div class="form-group">
+            <label>Assignments:</label>
+            <input id="txtAssignments" type="number" />
+        </div>
+
+        <div class="form-group">
+            <label>Group Projects:</label>
+            <input id="txtProjects" type="number" />
+        </div>
+
+        <div class="form-group">
+            <label>Quizzes:</label>
+            <input id="txtQuizzes" type="number" />
+        </div>
+
+        <div class="form-group">
+            <label>Exams:</label>
+            <input id="txtExams" type="number" />
+        </div>
+
+        <div class="form-group">
+            <label>INTEX:</label>
+            <input id="txtIntex" type="number" />
+        </div>
+
+        <input id="btnSend" type="button" class="btn btn-primary" value="Send Message" />
+    </form>
 </div>
