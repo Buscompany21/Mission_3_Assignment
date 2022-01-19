@@ -27,8 +27,15 @@ namespace Mission_3_Assignment.Controllers
         {
             return View();
         }
-
+        
+        [HttpGet]
         public IActionResult Calculator()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Calculator(CalculatorModel grades)
         {
             return View();
         }

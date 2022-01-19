@@ -4,34 +4,37 @@
 @{
     ViewData["Title"] = "Calculator";
 }
+@model CalculatorModel
 
 <h2>Grade Calculator</h2>
 <p>Enter % scored for each grade category</p>
-<form>
+<form method="post">
     <div class="form-group">
         <label>Assignments:</label>
-        <input id="txtAssignments" type="number" />
+        <input id="txtAssignments" type="number" asp-for="Assignments" />
     </div>
 
     <div class="form-group">
         <label>Group Projects:</label>
-        <input id="txtProjects" type="number" />
+        <input id="txtProjects" type="number" asp-for="Projects"/>
     </div>
 
     <div class="form-group">
         <label>Quizzes:</label>
-        <input id="txtQuizzes" type="number" />
+        <input id="txtQuizzes" type="number" asp-for="Quizzes"/>
     </div>
 
     <div class="form-group">
         <label>Exams:</label>
-        <input id="txtExams" type="number" />
+        <input id="txtExams" type="number" asp-for="Exams"/>
     </div>
 
     <div class="form-group">
         <label>INTEX:</label>
-        <input id="txtIntex" type="number" />
+        <input id="txtIntex" type="number" asp-for="Intex"/>
     </div>
 
-    <input id="btnSend" type="button" class="btn btn-primary" value="Send Message" />
+    <input id="btnSend" type="submit" class="btn btn-primary" value="Send Message" />
 </form>
+
+<script src="~/js/calculate.js"></script>
