@@ -11,30 +11,32 @@
 <form method="post">
     <div class="form-group">
         <label>Assignments:</label>
-        <input id="txtAssignments" type="number" asp-for="Assignments" max="100" min="1" required/>
+        <input id="txtAssignments" type="number" asp-for="Assignments"/>
     </div>
 
     <div class="form-group">
         <label>Group Projects:</label>
-        <input id="txtProjects" type="number" asp-for="Projects" max="100" min="1" required/>
+        <input id="txtProjects" type="number" asp-for="Projects"/>
     </div>
 
     <div class="form-group">
         <label>Quizzes:</label>
-        <input id="txtQuizzes" type="number" asp-for="Quizzes" max="100" min="1" required/>
+        <input id="txtQuizzes" type="number" asp-for="Quizzes"/>
     </div>
 
     <div class="form-group">
         <label>Exams:</label>
-        <input id="txtExams" type="number" asp-for="Exams" max="100" min="1" required/>
+        <input id="txtExams" type="number" asp-for="Exams"/>
     </div>
 
     <div class="form-group">
         <label>INTEX:</label>
-        <input id="txtIntex" type="number" asp-for="Intex" max="100" min="1" required/>
+        <input id="txtIntex" type="number" asp-for="Intex"/>
     </div>
 
     <input id="btnSend" type="submit" class="btn btn-primary" value="Send Message" />
 </form>
+
+<div asp-validation-summary="All"></div>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/calculate.js" asp-append-version="true"></script>
